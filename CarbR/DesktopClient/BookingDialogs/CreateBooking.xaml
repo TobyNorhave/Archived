@@ -1,0 +1,56 @@
+﻿<Window x:Class="DesktopClient.BookingDialogs.CreateBooking"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DesktopClient.BookingDialogs"
+        mc:Ignorable="d"
+        Title="CreateBooking" Height="450" Width="450" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="20*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Column="1" Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center">Create Booking</Label>
+            <Label Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Right">Time:</Label>
+            <ComboBox Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" Name="cbxHours" Margin="5,5,2,5" IsReadOnly="True"></ComboBox>
+            <Label Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Right">Name:</Label>
+            <TextBox Name="txtName" Grid.Column="1" Grid.Row="2" VerticalAlignment="Center" Margin="5,0" IsReadOnly="True"></TextBox>
+            <Label Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Right">NoOfPeople:</Label>
+            <ComboBox Name="cbxNoOfPeople" Grid.Column="1" Grid.Row="3" VerticalAlignment="Center" Margin="5,0"></ComboBox>
+            <Label Grid.Row="4" VerticalAlignment="Center" HorizontalAlignment="Right">Cafe:</Label>
+            <TextBox Name="txtCafe" Grid.Column="1" Grid.Row="4" VerticalAlignment="Center" Margin="5,0" IsReadOnly="True"></TextBox>
+            <Grid Grid.Column="1" Grid.Row="5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Name="BtnClickAccept" VerticalAlignment="Center" Margin="5,0" Click="BtnClickAccept_Click">Accept</Button>
+                <Button Name="BtnClickCancel" Grid.Column="1" VerticalAlignment="Center" Margin="5,0" Click="BtnClickCancel_Click">Cancel</Button>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>

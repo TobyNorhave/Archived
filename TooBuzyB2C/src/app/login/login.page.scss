@@ -1,0 +1,88 @@
+
+ion-list{
+
+    background: transparent;
+    
+    display: block;
+    margin: 15%;
+    .listitem{
+        //border: 2px solid var(--ion-color-primary);
+        margin-bottom: 10px;
+        padding: 0px;
+    
+    }
+    ion-item{
+        border-radius: 10px;
+        --background: rgba(255, 255, 255, 0.4);
+        ion-input{
+            --color:var(--ion-color-light);
+            opacity: 1;
+            --placeholder-color:var(--ion-color-light);
+            --placeholder-opacity:1;
+           
+            
+        }
+    }
+
+    .logo{
+        
+        height: 150px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-bottom: 30px; 
+    }
+
+}
+
+
+ion-content.backgound{
+    --background: url(../../assets/back.png) 0 0/100% 100% no-repeat;
+}
+
+.gp-listitem{
+    --background: #DB4437 !important; 
+    margin-left: 4px; 
+}
+
+
+.fb-listitem{
+   --background: #3C5A99 !important;  
+   margin-right: 4px; 
+   color: #fff;
+   
+}
+.g-listitem{
+    --background: #d34836 !important;  
+    margin-right: 4px; 
+    color: #fff;
+   
+ }
+
+
+#or{
+    color: #fff;
+    font-weight: bold;
+    margin: 10px 0px !important;
+    font-size: .8em;
+}
+
+p{
+    font-size:.7em;
+    color: #fff;
+    span{
+        font-weight: bold;
+        text-decoration: underline;
+        text-transform: uppercase;
+    }
+}
+
+.login-button{
+    font-weight: bold;
+    font-size: .8em;
+
+}
+
+hr{
+    border-top: 1px solid rgba(255, 255, 255, 0.342);
+}

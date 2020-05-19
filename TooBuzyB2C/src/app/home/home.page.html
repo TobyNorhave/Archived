@@ -1,0 +1,306 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button (click)="presentPopover(event)">
+        <ion-icon slot="icon-only" name="options"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-searchbar></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+
+
+  <!-- SLIDER CODE -->
+  <ion-slides pager="true" [options]="slideOpts">
+    <ion-slide>
+      <img src="https://dummyimage.com/1800x600/000/fff">
+    </ion-slide>
+    <ion-slide>
+      <img src="https://dummyimage.com/1800x600/000/fff">
+    </ion-slide>
+    <ion-slide>
+      <img src="https://dummyimage.com/1800x600/000/fff">
+    </ion-slide>
+  </ion-slides>
+
+
+
+
+
+  <!-- COUISINES START -->
+
+  <ion-row class="ion-justify-content-center back">
+    <ion-col size-xl="6" size-lg="8">
+      <ion-row>
+        <ion-col class="ion-no-padding">
+          <div class="heading-1">
+            Popular Cousines
+          </div>
+        </ion-col>
+        <ion-col class="ion-no-padding ion-text-right">
+
+          <!-- <div class="heading-2">
+                more
+              </div> -->
+
+
+        </ion-col>
+      </ion-row>
+
+      <div class="scrolling-wrapper">
+        <!-- <div class="card">
+      <img src="https://dummyimage.com/600x400/000/fff">
+      <div class="card-title">Cuisine</div>
+    </div> -->
+        <ion-card class="card ion-no-margin">
+          <img src="https://dummyimage.com/600x400/000/fff">
+          <ion-card-content class="ion-no-padding">
+            <div class="card-title">Cuisine</div>
+          </ion-card-content>
+        </ion-card>
+        <ion-card class="card ion-no-margin">
+          <img src="https://dummyimage.com/600x400/000/fff">
+          <ion-card-content class="ion-no-padding">
+            <div class="card-title">Cuisine</div>
+          </ion-card-content>
+        </ion-card>
+        <ion-card class="card ion-no-margin">
+          <img src="https://dummyimage.com/600x400/000/fff">
+          <ion-card-content class="ion-no-padding">
+            <div class="card-title">Cuisine</div>
+          </ion-card-content>
+        </ion-card>
+        <ion-card class="card ion-no-margin">
+          <img src="https://dummyimage.com/600x400/000/fff">
+          <ion-card-content class="ion-no-padding">
+            <div class="card-title">Cuisine</div>
+          </ion-card-content>
+        </ion-card>
+
+        <ion-card class="card ion-no-margin">
+          <img src="https://dummyimage.com/600x400/000/fff">
+          <ion-card-content class="ion-no-padding">
+            <div class="card-title">Cuisine</div>
+          </ion-card-content>
+        </ion-card>
+
+      </div>
+    </ion-col>
+  </ion-row>
+
+
+  <!-- COUISINES END -->
+
+  <!-- RESTAURANT START -->
+
+
+  <ion-row class="ion-justify-content-center back">
+    <ion-col size-xl="6" size-lg="8">
+      <div class="heading-1">
+        Restaurants Nearby
+      </div>
+
+      <!-- LIST OF RESTAURANTS -->
+      <ion-list class="ion-no-padding">
+
+        <!-- RESTAURANT 1 -->
+        <div class="restaurant" (click)="openDetails()" tappable>
+          <ion-row>
+            <ion-col class="ion-no-padding restaurant-header ion-text-center">
+              <img src="https://dummyimage.com/800x200/000/fff">
+            </ion-col>
+            <!-- <ion-col class="ion-text-center">
+            <ion-thumbnail><img src="https://dummyimage.com/600x400/000/fff"></ion-thumbnail>
+          </ion-col> -->
+          </ion-row>
+          <ion-row>
+            <ion-col class="ion-no-padding">
+              <ion-item lines="none">
+                <ion-thumbnail slot="start"><img src="https://dummyimage.com/600x400/000/fff"></ion-thumbnail>
+                <ion-label>
+                  <ion-badge>Open</ion-badge>
+                  <h3>Restaurant Title</h3>
+                  <p>
+                    <ion-icon name="star" color="danger"></ion-icon>
+                    <ion-icon name="star" color="danger"></ion-icon>
+                    <ion-icon name="star" color="danger"></ion-icon>
+                    <ion-icon name="star" color="danger"></ion-icon>
+                    <ion-icon name="star" color="danger"></ion-icon>
+                    (5.0)
+                  </p>
+                  <p>
+                    <ion-icon name="logo-usd" color="medium"></ion-icon>
+                    <ion-icon name="logo-usd" color="medium"></ion-icon>
+                    <ion-icon name="logo-usd" color="medium"></ion-icon>
+                  </p>
+                </ion-label>
+                <ion-button slot="end" size="small" color="dark" fill="clear">
+                  <ion-icon slot="start" color="primary" name="ios-pin"></ion-icon>2 km
+                </ion-button>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+
+        </div>
+
+
+        <!-- Restaurant 2 -->
+        <div class="restaurant" (click)="openDetails()">
+          <ion-row>
+            <ion-col class="ion-no-padding restaurant-header ion-text-center">
+              <img src="https://dummyimage.com/800x200/000/fff">
+            </ion-col>
+            <!-- <ion-col class="ion-text-center">
+              <ion-thumbnail><img src="https://dummyimage.com/600x400/000/fff"></ion-thumbnail>
+            </ion-col> -->
+          </ion-row>
+          <ion-row>
+            <ion-col class="ion-no-padding">
+              <ion-item lines="none">
+                <ion-thumbnail slot="start"><img src="https://dummyimage.com/600x400/000/fff"></ion-thumbnail>
+                <ion-label>
+                  <ion-badge>Open</ion-badge>
+                  <h3>Restaurant Title</h3>
+                  <p>
+                    <ion-icon name="star" color="danger"></ion-icon>
+                    <ion-icon name="star" color="danger"></ion-icon>
+                    <ion-icon name="star" color="danger"></ion-icon>
+                    <ion-icon name="star" color="danger"></ion-icon>
+                    <ion-icon name="star" color="danger"></ion-icon>
+                    (5.0)
+                  </p>
+                  <p>
+                    <ion-icon name="logo-usd" color="medium"></ion-icon>
+                    <ion-icon name="logo-usd" color="medium"></ion-icon>
+                    <ion-icon name="logo-usd" color="medium"></ion-icon>
+                  </p>
+                </ion-label>
+                <ion-button slot="end" size="small" color="dark" fill="clear">
+                  <ion-icon slot="start" color="primary" name="ios-pin"></ion-icon>2 km
+                </ion-button>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+
+        </div>
+
+
+        <!-- RESTAURANT 3 -->
+        <div class="restaurant" (click)="openDetails()">
+          <ion-row>
+            <ion-col class="ion-no-padding restaurant-header ion-text-center">
+              <img src="https://dummyimage.com/800x200/000/fff">
+            </ion-col>
+            <!-- <ion-col class="ion-text-center">
+                <ion-thumbnail><img src="https://dummyimage.com/600x400/000/fff"></ion-thumbnail>
+              </ion-col> -->
+          </ion-row>
+          <ion-row>
+            <ion-col class="ion-no-padding">
+              <ion-item lines="none">
+                <ion-thumbnail slot="start"><img src="https://dummyimage.com/600x400/000/fff"></ion-thumbnail>
+                <ion-label>
+                  <ion-badge>Open</ion-badge>
+                  <h3>Restaurant Title</h3>
+                  <p>
+                    <ion-icon name="star" color="danger"></ion-icon>
+                    <ion-icon name="star" color="danger"></ion-icon>
+                    <ion-icon name="star" color="danger"></ion-icon>
+                    <ion-icon name="star" color="danger"></ion-icon>
+                    <ion-icon name="star" color="danger"></ion-icon>
+                    (5.0)
+                  </p>
+                  <p>
+                    <ion-icon name="logo-usd" color="medium"></ion-icon>
+                    <ion-icon name="logo-usd" color="medium"></ion-icon>
+                    <ion-icon name="logo-usd" color="medium"></ion-icon>
+                  </p>
+                </ion-label>
+                <ion-button slot="end" size="small" color="dark" fill="clear">
+                  <ion-icon slot="start" color="primary" name="ios-pin"></ion-icon>2 km
+                </ion-button>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+
+        </div>
+
+
+      </ion-list>
+
+
+    </ion-col>
+  </ion-row>
+
+  <!-- RESTAURANT END -->
+
+  <!-- ORDER AGAIN SECTION START -->
+
+  <ion-row class="ion-justify-content-center back">
+    <ion-col size-xl="6" size-lg="8">
+
+      <div class="heading-1">
+        Order Again
+      </div>
+
+      <div class="scrolling-wrapper">
+
+        <ion-card class="order ion-no-margin">
+          <ion-row>
+            <ion-col class="ion-text-center">
+              <ion-thumbnail><img src="https://dummyimage.com/600x400/000/fff"></ion-thumbnail>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col class="ion-text-center ion-text-wrap">
+              <h3>Restaurant Title</h3>
+              <p>Category</p>
+            </ion-col>
+          </ion-row>
+
+        </ion-card>
+        <ion-card class="order ion-no-margin">
+          <ion-row>
+            <ion-col class="ion-text-center">
+              <ion-thumbnail><img src="https://dummyimage.com/600x400/000/fff"></ion-thumbnail>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col class="ion-text-center ion-text-wrap">
+              <h3>Restaurant Title</h3>
+              <p>Category</p>
+            </ion-col>
+          </ion-row>
+
+        </ion-card>
+        <ion-card class="order ion-no-margin">
+          <ion-row>
+            <ion-col class="ion-text-center">
+              <ion-thumbnail><img src="https://dummyimage.com/600x400/000/fff"></ion-thumbnail>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col class="ion-text-center ion-text-wrap">
+              <h3>Restaurant Title</h3>
+              <p>Category</p>
+            </ion-col>
+          </ion-row>
+
+        </ion-card>
+
+
+      </div>
+
+    </ion-col>
+  </ion-row>
+
+  <!-- END -->
+
+
+</ion-content>
+
+<!-- END OF CONTENT -->

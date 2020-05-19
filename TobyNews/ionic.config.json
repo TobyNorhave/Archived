@@ -1,0 +1,7 @@
+{
+  "name": "TobyNews",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

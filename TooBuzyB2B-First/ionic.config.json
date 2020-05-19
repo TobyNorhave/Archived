@@ -1,0 +1,7 @@
+{
+  "name": "TooBuzyB2B",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

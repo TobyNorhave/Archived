@@ -1,0 +1,336 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Restaurant Title</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div class="header">
+    <!-- <img src="https://dummyimage.com/1800x800/000/fff&text=Restaurant Banner"> -->
+
+    <ion-card class="header-item ion-no-margin">
+      <ion-item lines="none">
+        <ion-thumbnail slot="start"><img src="https://dummyimage.com/600x400/000/fff"></ion-thumbnail>
+        <ion-label>
+          <h3>Restaurant Title</h3>
+          <p>
+            <ion-icon name="star" color="danger"></ion-icon>
+            <ion-icon name="star" color="danger"></ion-icon>
+            <ion-icon name="star" color="danger"></ion-icon>
+            <ion-icon name="star" color="danger"></ion-icon>
+            <ion-icon name="star" color="danger"></ion-icon>
+            (5.0)
+          </p>
+          <p>
+            <ion-icon name="logo-usd" color="medium"></ion-icon>
+            <ion-icon name="logo-usd" color="medium"></ion-icon>
+            <ion-icon name="logo-usd" color="medium"></ion-icon>
+          </p>
+        </ion-label>
+        <ion-button slot="end" size="small" color="dark" fill="clear">
+          <ion-icon slot="start" color="primary" name="ios-pin"></ion-icon>2 km
+        </ion-button>
+      </ion-item>
+    </ion-card>
+
+
+  </div>
+
+
+  <!-- sections -->
+
+  <ion-row class="sections ion-padding ion-text-center ion-justify-content-center">
+    <ion-col (click)="changeSection(0)" [class.active-section]="sections[0]" size-xl="2">Menu</ion-col>
+    <ion-col (click)="changeSection(1)" [class.active-section]="sections[1]" size-xl="2">Reviews<small> (123)</small>
+    </ion-col>
+    <ion-col (click)="changeSection(2)" [class.active-section]="sections[2]" size-xl="2">Info</ion-col>
+  </ion-row>
+
+  <div *ngIf="sections[0]">
+    <ion-row class="ion-justify-content-center">
+      <ion-col size-xl="8" size-lg="10">
+        <div class="scrolling-wrapper">
+
+          <ion-card class="order ion-no-margin">
+            <img src="https://dummyimage.com/1200x300/000/fff&text=Special Offer Banner">
+
+          </ion-card>
+          <ion-card class="order ion-no-margin">
+            <img src="https://dummyimage.com/1200x300/000/fff&text=Special Offer Banner">
+
+          </ion-card>
+          <ion-card class="order ion-no-margin">
+            <img src="https://dummyimage.com/1200x300/000/fff&text=Special Offer Banner">
+
+          </ion-card>
+
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="ion-justify-content-center">
+      <ion-col size-xl="8" size-lg="10">
+        <div class="menu">
+          <div class="left">
+
+            <div *ngFor="let category of categories" (click)="activate(category)" [class.active]="category.active"
+              class="menu-item">
+              {{category.name}} <ion-badge *ngIf="category.quantity>0">{{category.quantity}}</ion-badge>
+            </div>
+
+          </div>
+          <div class="right">
+
+            <ion-list>
+              <ion-item lines="none">
+                <ion-thumbnail slot="start"><img src="https://dummyimage.com/64x64/000/fff&text=logo"></ion-thumbnail>
+                <ion-label>
+                  <h3>Menu item title</h3>
+                  <p>Description</p>
+
+                  <ion-row>
+                    <ion-col class="ion-no-padding"> <span class="price">$10</span><span class="count"> x 1</span>
+                    </ion-col>
+                    <ion-col class="ion-no-padding ion-text-right">
+
+                      <ion-icon name="remove" color="light"></ion-icon>
+
+                      <ion-icon name="add" color="light"></ion-icon>
+
+                    </ion-col>
+                  </ion-row>
+
+                </ion-label>
+              </ion-item>
+              <ion-item lines="none">
+                <ion-thumbnail slot="start"><img src="https://dummyimage.com/64x64/000/fff&text=logo"></ion-thumbnail>
+                <ion-label>
+                  <h3>Menu item title</h3>
+                  <p>Description</p>
+
+                  <ion-row>
+                    <ion-col class="ion-no-padding"> <span class="price">$10</span><span class="count"> x 1</span>
+                    </ion-col>
+                    <ion-col class="ion-no-padding ion-text-right">
+
+                      <ion-icon name="remove" color="light"></ion-icon>
+
+                      <ion-icon name="add" color="light"></ion-icon>
+
+                    </ion-col>
+                  </ion-row>
+
+                </ion-label>
+              </ion-item>
+              <ion-item lines="none">
+                <ion-thumbnail slot="start"><img src="https://dummyimage.com/64x64/000/fff&text=logo"></ion-thumbnail>
+                <ion-label>
+                  <h3>Menu item title</h3>
+                  <p>Description</p>
+
+                  <ion-row>
+                    <ion-col class="ion-no-padding"> <span class="price">$10</span><span class="count"></span></ion-col>
+                    <ion-col class="ion-no-padding ion-text-right">
+
+                      <ion-icon name="remove" color="light"></ion-icon>
+
+                      <ion-icon name="add" color="light"></ion-icon>
+
+                    </ion-col>
+                  </ion-row>
+
+                </ion-label>
+              </ion-item>
+              <ion-item lines="none">
+                <ion-thumbnail slot="start"><img src="https://dummyimage.com/64x64/000/fff&text=logo"></ion-thumbnail>
+                <ion-label>
+                  <h3>Menu item title</h3>
+                  <p>Description</p>
+
+                  <ion-row>
+                    <ion-col class="ion-no-padding"> <span class="price">$10</span><span class="count"> x 2</span>
+                    </ion-col>
+                    <ion-col class="ion-no-padding ion-text-right">
+
+                      <ion-icon name="remove" color="light"></ion-icon>
+
+                      <ion-icon name="add" color="light"></ion-icon>
+
+                    </ion-col>
+                  </ion-row>
+
+                </ion-label>
+              </ion-item>
+
+
+            </ion-list>
+
+          </div>
+
+        </div>
+      </ion-col>
+    </ion-row>
+
+
+
+
+  </div>
+  <div *ngIf="sections[1]">
+    <ion-row class="ion-justify-content-center back">
+      <ion-col size-xl="8" size-lg="10">
+
+        <ion-list class="reviews">
+
+          <ion-badge color="success">Good<small>(200)</small></ion-badge>
+          <ion-badge color="success">tasty<small>(200)</small></ion-badge>
+          <ion-badge color="warning">quality<small>(200)</small></ion-badge>
+          <ion-badge color="danger">bad<small>(200)</small></ion-badge>
+
+
+          <ion-item lines="none">
+            <ion-avatar slot="start"><img src="https://dummyimage.com/100x100/000/fff&text=avatar"></ion-avatar>
+            <ion-label>
+              <h3>Full Name</h3>
+              <ion-note><small>12/01/2019</small></ion-note>
+
+
+            </ion-label>
+            <ion-button slot="end" class="ion-no-padding ion-no-margin" color="danger" fill="clear">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              (5)
+            </ion-button>
+
+          </ion-item>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sit amet ultrices ex.</p>
+
+          <div class="scrolling-wrapper">
+
+            <ion-card class="card-item ion-no-margin">
+              <img src="https://dummyimage.com/90x60/000/fff">
+              <ion-card-content class="ion-no-padding">
+                <div class="card-title">item name</div>
+              </ion-card-content>
+            </ion-card>
+            <ion-card class="card-item ion-no-margin">
+              <img src="https://dummyimage.com/90x60/000/fff">
+              <ion-card-content class="ion-no-padding">
+                <div class="card-title">item name</div>
+              </ion-card-content>
+            </ion-card>
+            <ion-card class="card-item ion-no-margin">
+              <img src="https://dummyimage.com/90x60/000/fff">
+              <ion-card-content class="ion-no-padding">
+                <div class="card-title">item name</div>
+              </ion-card-content>
+            </ion-card>
+
+          </div>
+
+        </ion-list>
+      </ion-col>
+    </ion-row>
+
+  </div>
+
+  <div *ngIf="sections[2]">
+    <ion-row class="ion-justify-content-center back">
+      <ion-col size-xl="8" size-lg="10">
+        <ion-list class="reviews">
+
+          <div class="heading-1">
+            Photo Gallery
+          </div>
+
+
+          <div class="scrolling-wrapper">
+            <!-- <div class="card">
+              <img src="https://dummyimage.com/600x400/000/fff">
+              <div class="card-title">Cuisine</div>
+            </div> -->
+            <ion-card class="card ion-no-margin">
+              <img src="https://dummyimage.com/600x400/000/fff">
+
+            </ion-card>
+            <ion-card class="card ion-no-margin">
+              <img src="https://dummyimage.com/600x400/000/fff">
+
+            </ion-card>
+            <ion-card class="card ion-no-margin">
+              <img src="https://dummyimage.com/600x400/000/fff">
+
+            </ion-card>
+            <ion-card class="card ion-no-margin">
+              <img src="https://dummyimage.com/600x400/000/fff">
+
+            </ion-card>
+
+            <ion-card class="card ion-no-margin">
+              <img src="https://dummyimage.com/600x400/000/fff">
+
+            </ion-card>
+
+          </div>
+
+
+
+
+          <ion-item lines="none">
+            <ion-icon name="ios-pin" color="medium" slot="start"></ion-icon>
+            <ion-label>
+              <h3>Shop # 01, street, city</h3>
+              <ion-note><small>Address</small></ion-note>
+            </ion-label>
+            <ion-badge slot="end" color="primary">View on map</ion-badge>
+
+          </ion-item>
+          <ion-item lines="none">
+            <ion-icon name="ios-alarm" color="medium" slot="start"></ion-icon>
+            <ion-label>
+              <h3>07:00-23:59</h3>
+              <ion-note><small>Opening Hours</small></ion-note>
+            </ion-label>
+
+          </ion-item>
+
+          <ion-item lines="none">
+            <ion-icon name="ios-call" color="medium" slot="start"></ion-icon>
+            <ion-label>
+              <h3>(111) 1232-1234</h3>
+              <ion-note><small>Contact Us</small></ion-note>
+            </ion-label>
+
+          </ion-item>
+
+
+
+
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </div>
+
+  <!-- footer -->
+  <ion-row class="footer-button ion-justify-content-center">
+    <ion-col class="left" size-xl="2" (click)="presentPopover()">
+      <ion-icon name="ios-cart" color="light"></ion-icon>
+      <ion-badge class="danger">2</ion-badge>
+    </ion-col>
+    <ion-col size-xl="2">
+      <span class="title">net total</span> <span class="price">$50</span>
+    </ion-col>
+    <ion-col class="right" size-xl="2" (click)="openCheckout()">
+      Checkout
+    </ion-col>
+  </ion-row>
+
+  <div class="space-bottom">
+  </div>
+
+</ion-content>

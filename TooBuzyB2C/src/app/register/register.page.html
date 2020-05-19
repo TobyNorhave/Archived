@@ -1,0 +1,67 @@
+<ion-content class="backgound">
+  <ion-row class="ion-justify-content-center">
+    <ion-col size-xl="6" size-lg="6">
+      <ion-list lines="none">
+
+        <img class="logo" src="assets/logo.png">
+        <ion-item class="listitem">
+          <ion-icon name="ios-person" color="light" slot="start"></ion-icon>
+          <ion-input placeholder="Full Name"></ion-input>
+        </ion-item>
+        <ion-item class="listitem">
+          <ion-icon name="ios-call" color="light" slot="start"></ion-icon>
+          <ion-input placeholder="Mobile No."></ion-input>
+        </ion-item>
+
+        <ion-item class="listitem">
+          <ion-icon name="ios-lock" color="light" slot="start"></ion-icon>
+          <ion-input type="password" placeholder="password"></ion-input>
+        </ion-item>
+
+        <ion-item class="listitem">
+          <ion-icon name="ios-pin" color="light" slot="start"></ion-icon>
+          <ion-input placeholder="Zip Code"></ion-input>
+        </ion-item>
+
+
+        <ion-item color="light" class="ion-text-center" (click)="register()">
+          <ion-label class="login-button">REGISTER</ion-label>
+          <ion-icon slot="end" name="arrow-dropright"></ion-icon>
+        </ion-item>
+        <p class="ion-text-center">Already have account? <span (click)="login()">login</span></p>
+
+
+        <ion-row>
+          <ion-col text-center>
+            <hr>
+          </ion-col>
+          <ion-col size="2" text-center>
+            <ion-text id="or" color="light">OR</ion-text>
+          </ion-col>
+          <ion-col text-center>
+            <hr>
+          </ion-col>
+        </ion-row>
+
+
+        <p class="ion-text-center">Signup with</p>
+        <ion-row>
+          <ion-col>
+            <ion-item class="fb-listitem">
+              <ion-icon name="logo-facebook" color="light" slot="start"></ion-icon>
+              <ion-label class="login-button">Facebook</ion-label>
+            </ion-item>
+          </ion-col>
+          <ion-col>
+            <ion-item class="g-listitem">
+              <ion-icon name="logo-google" color="light" slot="start"></ion-icon>
+              <ion-label class="login-button">Google</ion-label>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+
+      </ion-list>
+    </ion-col>
+  </ion-row>
+
+</ion-content>

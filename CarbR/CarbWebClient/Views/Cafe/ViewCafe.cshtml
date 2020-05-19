@@ -1,0 +1,106 @@
+﻿@model IEnumerable<Model.Cafe>
+
+@{
+    ViewBag.Title = "View Cafe";
+
+    foreach (var item in Model)
+    {
+        ViewBag.CafeID = item.Id;
+        ViewBag.Address = item.Address;
+        ViewBag.Zip = item.Zip;
+        ViewBag.Description = item.Description;
+        ViewBag.City = item.City;
+    }
+
+    if(ViewBag.Error != null)
+    {
+        <script>
+            $(document).ready(function(){
+            alert('@ViewBag.Error');
+            });
+        </script>
+    }
+}
+
+<h2>
+    @ViewBag.CafeName
+</h2>
+<h3></h3>
+<div>
+
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <h2>
+            Om Caféen
+        </h2>
+        <p>
+            Adresse: @ViewBag.Address
+        <p>
+            By: @ViewBag.Zip @ViewBag.City
+        </p>
+        <p>
+            Rating: @ViewBag.Rating
+        </p>
+        <p>
+            Beskrivelse: @ViewBag.Description
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>
+            Bestil Bord
+        </h2>
+        <p>
+            @using (Html.BeginForm("CreateBooking", "Booking", FormMethod.Post))
+            {
+            <p>
+                <input type="number" name="noOfPeople" value="1" min="1" max="100">
+            </p>
+            <p>
+                <input type="hidden" name="CafeId" value="@ViewBag.CafeID" />
+            </p>
+            <p>
+                <input class="datepicker" type="date" name="date" />
+            </p>
+            <p>
+                <select name="time">
+                    <option value="00:00">00:00</option>
+                    <option value="01:00">01:00</option>
+                    <option value="02:00">02:00</option>
+                    <option value="03:00">03:00</option>
+                    <option value="04:00">04:00</option>
+                    <option value="05:00">05:00</option>
+                    <option value="06:00">06:00</option>
+                    <option value="07:00">07:00</option>
+                    <option value="08:00">08:00</option>
+                    <option value="09:00">09:00</option>
+                    <option value="10:00">10:00</option>
+                    <option value="11:00">11:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="14:00">14:00</option>
+                    <option value="15:00">15:00</option>
+                    <option value="16:00">16:00</option>
+                    <option value="17:00">17:00</option>
+                    <option value="18:00">18:00</option>
+                    <option value="19:00">19:00</option>
+                    <option value="20:00">20:00</option>
+                    <option value="21:00">21:00</option>
+                    <option value="22:00">22:00</option>
+                    <option value="23:00">23:00</option>
+
+                </select>
+            </p>
+            <p>
+                <input type="submit" name="Bestil" />
+            </p>
+        }
+            </p>
+        </div>
+
+    </div>
+    <body>
+        <div>
+
+        </div>
+    </body>

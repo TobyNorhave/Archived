@@ -1,0 +1,13 @@
+.app-menu{
+
+    --background:var(--ion-color-primary);
+    ion-list{
+        background: var(--ion-color-primary);
+    }
+    ion-label{
+        font-weight: bold;
+        font-size: .8em;
+    }
+  
+}
+

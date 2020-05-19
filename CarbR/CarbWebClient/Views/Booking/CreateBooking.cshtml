@@ -1,0 +1,31 @@
+﻿@model Model.Booking
+
+
+@{
+    if (ViewBag.Error != null)
+    {
+        <meta http-equiv="refresh" content="3;url=/Cafe/ViewCafe/@ViewBag.CafeID" />
+        <div class="col-4">
+            <h2>
+                @ViewBag.Error
+            </h2>
+            <h4>
+                @Html.ActionLink("Tilbage", "ViewCafe", "Cafe", new { id = ViewBag.CafeID })
+            </h4>
+            <h3></h3>
+        </div>
+    }
+    else
+    {
+        <div class="col-4">
+            <h2>
+                Tak for din bestilling d. @ViewBag.Date kl. @ViewBag.Time!
+            </h2>
+            <h4>
+                @Html.ActionLink("Home", "Index", "Home")
+            </h4>
+            <h3></h3>
+        </div>
+    }
+}
+

@@ -1,0 +1,32 @@
+.scrolling-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  .card {
+    display: inline-block;
+  }
+  .order {
+    display: inline-block;
+  }
+}
+
+.card {
+ // width: 120px;
+  .card-title {
+    text-align: center;
+    font-size: 0.9em;
+    display: block;
+    color:#000;
+  }
+
+}
+.heading-1 {
+    padding: 10px 8px;
+    font-weight: bold;
+    font-size: 1em;
+  }

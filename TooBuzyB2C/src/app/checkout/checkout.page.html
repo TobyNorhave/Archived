@@ -1,0 +1,208 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Checkout</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+
+  <div class="header">
+
+    <ion-card class="header-item ion-no-margin">
+      <ion-item lines="none">
+        <ion-avatar slot="start"><img src="https://dummyimage.com/100x100/000/fff&text=avatar"></ion-avatar>
+        <ion-label>
+          <h3>Full Name</h3>
+          <p>Customer Info</p>
+        </ion-label>
+      </ion-item>
+    </ion-card>
+
+
+  </div>
+
+  <ion-row class="ion-justify-content-center back">
+    <ion-col size-xl="6" size-lg="8">
+      <ion-list>
+
+        <div class="heading-1">
+          Order Details
+        </div>
+
+
+        <div class="order">
+          <ion-item lines="none">
+            <ion-thumbnail slot="start"><img src="https://dummyimage.com/600x400/000/fff"></ion-thumbnail>
+            <ion-label>
+              <h3>Restaurant Title</h3>
+              <p>
+                <ion-icon name="star" color="danger"></ion-icon>
+                <ion-icon name="star" color="danger"></ion-icon>
+                <ion-icon name="star" color="danger"></ion-icon>
+                <ion-icon name="star" color="danger"></ion-icon>
+                <ion-icon name="star" color="danger"></ion-icon>
+                (5.0)
+              </p>
+              <p>
+                <ion-icon name="logo-usd" color="medium"></ion-icon>
+                <ion-icon name="logo-usd" color="medium"></ion-icon>
+                <ion-icon name="logo-usd" color="medium"></ion-icon>
+              </p>
+            </ion-label>
+            <ion-button slot="end" size="small" color="dark" fill="clear">
+              <ion-icon slot="start" color="primary" name="ios-pin"></ion-icon>2 km
+            </ion-button>
+          </ion-item>
+
+          <ion-item lines="none">
+            <ion-thumbnail class="small-thumb" slot="start"><img src="https://dummyimage.com/600x400/000/fff">
+            </ion-thumbnail>
+            <ion-label>
+              <h3>Menu Item </h3>
+              <p>x1</p>
+            </ion-label>
+            <ion-note slot="end" class="price">$12</ion-note>
+          </ion-item>
+
+          <ion-item lines="none">
+            <ion-thumbnail class="small-thumb" slot="start"><img src="https://dummyimage.com/600x400/000/fff">
+            </ion-thumbnail>
+            <ion-label>
+              <h3>Menu Item </h3>
+              <p>x1</p>
+            </ion-label>
+            <ion-note slot="end" class="price">$12</ion-note>
+          </ion-item>
+
+          <ion-item lines="none">
+            <ion-thumbnail class="small-thumb" slot="start"><img src="https://dummyimage.com/600x400/000/fff">
+            </ion-thumbnail>
+            <ion-label>
+              <h3>Menu Item </h3>
+              <p>x1</p>
+            </ion-label>
+            <ion-note slot="end" class="price">$12</ion-note>
+          </ion-item>
+
+        </div>
+
+        <div class="heading-1">
+          Choose Time
+        </div>
+
+        <div class="time">
+          <ion-row class="ion-text-center">
+            <ion-col>
+              12:00
+            </ion-col>
+            <ion-col>
+              13:00
+            </ion-col>
+          </ion-row>
+          <ion-row class="ion-text-center">
+            <ion-col class="active">
+              14:00
+            </ion-col>
+            <ion-col>
+              15:00
+            </ion-col>
+          </ion-row>
+          <ion-row class="ion-text-center">
+            <ion-col>
+              16:00
+            </ion-col>
+            <ion-col>
+              17:00
+            </ion-col>
+          </ion-row>
+
+        </div>
+
+        <div class="heading-1">
+          Do you have discount code?
+        </div>
+        <div class="order">
+          <ion-item>
+            <ion-input placeholder="DISCOUNT CODE"></ion-input>
+          </ion-item>
+
+        </div>
+
+
+        <div class="heading-1">
+          Choose your payment method
+        </div>
+
+        <div class="order">
+          <div class="scrolling-wrapper">
+
+            <ion-card class="card ion-no-margin">
+              <img src="https://dummyimage.com/90x60/000/fff">
+            </ion-card>
+            <ion-card class="card ion-no-margin">
+              <img src="https://dummyimage.com/90x60/000/fff">
+            </ion-card>
+            <ion-card class="card ion-no-margin">
+              <img src="https://dummyimage.com/90x60/000/fff">
+            </ion-card>
+            <ion-card class="card ion-no-margin">
+              <img src="https://dummyimage.com/90x60/000/fff">
+            </ion-card>
+
+          </div>
+        </div>
+
+        <div class="heading-1">
+          Dine In or Takeaway?
+        </div>
+
+        <div class="time bottom-space">
+          <ion-row class="ion-text-center">
+            <ion-col class="active">
+              Takeaway
+            </ion-col>
+            <ion-col>
+              Dine In
+            </ion-col>
+          </ion-row>
+
+        </div>
+
+
+
+        <div class="heading-1">
+          Any notes
+        </div>
+        <div class="order">
+          <ion-item>
+            <ion-textarea placeholder="Enter more information here..." rows="4"></ion-textarea>
+          </ion-item>
+
+        </div>
+
+
+
+      </ion-list>
+
+    </ion-col>
+  </ion-row>
+
+  <!-- footer -->
+  <ion-row class="footer-button ion-justify-content-center">
+    <ion-col class="left" size-xl="2" size-lg="3">
+      <ion-icon name="ios-save" color="light"></ion-icon>
+    </ion-col>
+    <ion-col size-xl="2" size-lg="3">
+      <span class="title">net total</span> <span class="price">$50</span>
+    </ion-col>
+    <ion-col class="right" size-xl="2" size-lg="3" (click)="openCheckout()">
+      pay
+    </ion-col>
+  </ion-row>
+
+  <div class="space-bottom">
+  </div>
+
+</ion-content>

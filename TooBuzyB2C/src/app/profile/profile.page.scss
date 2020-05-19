@@ -1,0 +1,30 @@
+
+ion-content{
+    --background: rgb(250, 250, 250) !important;
+ }
+
+ .profile-image{
+
+    border-radius: 50%;
+ }
+
+ ion-list{
+     margin: 0px 15px;
+     ion-item{
+         h3, ion-input{
+             font-weight: bold;
+             font-size: .7em;
+             text-transform: capitalize;
+         }
+
+
+     }
+ }
+
+ .heading-1{
+    padding: 16px 15px;
+    font-weight: bold;
+    font-size: .9em;
+
+}
+

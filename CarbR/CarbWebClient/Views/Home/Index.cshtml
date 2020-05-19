@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div id="span12">
+    <h1>
+        Book Bord
+    </h1>
+    <h2>
+        @ViewBag.Error
+    </h2>
+    <h4>
+        @ViewBag.Welcome
+    </h4>
+    <h2>
+        Postnummer:
+    </h2>
+    <p>
+        @using (Html.BeginForm("SearchZip", "Cafe", FormMethod.Get))
+        {
+            @Html.TextBox("search") <input type="submit" value="Søg" />
+        }
+    </p>
+</div>

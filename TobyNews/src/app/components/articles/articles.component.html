@@ -1,0 +1,15 @@
+<ion-grid fixed>
+  <!-- <ion-row *ngIf="!(news | async)">
+    <ion-col size=12 *ngFor="let article of fakeArticles">
+      <ion-skeleton-text width="80%"></ion-skeleton-text>
+      <ion-skeleton-text width="85%"></ion-skeleton-text>
+      <ion-skeleton-text width="90%"></ion-skeleton-text>
+      <ion-skeleton-text width="95%"></ion-skeleton-text>
+    </ion-col> -->
+  <!-- </ion-row> -->
+    <ion-row>
+      <ion-col size=12 size-lg=3 size-md=4 size-sm=6 size-xs=12 *ngFor="let article of (news | async)?.articles">
+         <app-article [article]="article"></app-article>
+      </ion-col>
+    </ion-row>
+  </ion-grid>

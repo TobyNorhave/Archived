@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+
+<body background="https://wallpapershome.com/images/pages/pic_h/403.jpg" no-repeat 50% 50%>
+    <div class="layout-header">
+        <div class="navbar navbar-inverse navbar-fixed-top" background-color: white>
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    @Html.ActionLink("Carb", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                        <li>@Html.ActionLink("Om", "About", "Home")</li>
+                        <li>@Html.ActionLink("Kontakt", "Contact", "Home")</li>
+                        <li>@Html.ActionLink("Registrering", "CreateUser", "Account")</li>
+                        <li>@Html.ActionLink("Søg Booking", "SearchBookings", "Booking")</li>
+                        <li>@Html.ActionLink("Søg Efter Bruger ", "Login", "Account")</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="home">
+        <div class="landing-text">
+            @RenderBody()
+        </div>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

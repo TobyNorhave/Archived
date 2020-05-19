@@ -1,0 +1,27 @@
+ion-list{
+    padding: 4px;
+}
+.price{
+
+    ion-col{
+        margin: 4px;
+        color: var(--ion-color-medium);
+        font-size: 1.2em;
+        padding: 10px;
+        border: 1px solid var(--ion-color-medium);
+        font-weight: bold;
+    }
+
+    .active{
+        background: var(--ion-color-primary);
+        color:#fff;
+    }
+}
+
+
+.heading-1{
+    padding: 16px 8px;
+    font-weight: bold;
+    font-size: .9em;
+
+}

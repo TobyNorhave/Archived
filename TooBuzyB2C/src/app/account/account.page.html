@@ -1,0 +1,127 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Account Settings</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+
+  <div class="header">
+    <ion-card class="header-item ion-no-margin">
+      <ion-item lines="none" detail="true" (click)="openProfile()">
+        <ion-avatar slot="start"><img src="https://dummyimage.com/100x100/000/fff&text=avatar"></ion-avatar>
+        <ion-label>
+          <h3>Full Name</h3>
+          <p>User Info</p>
+        </ion-label>
+
+        <!-- <ion-button fill="clear" color="medium" slot="end">
+          <ion-icon slot="icon-only" name="ios-create"></ion-icon>
+        </ion-button> -->
+      </ion-item>
+    </ion-card>
+  </div>
+
+
+  <ion-row class="ion-justify-content-center back">
+    <ion-col size-xl="6" size-lg="8">
+
+
+      <ion-grid class="categories">
+        <ion-row>
+          <ion-col text-center>
+            <ion-thumbnail>
+              <img src="../../assets/coupon.png">
+            </ion-thumbnail>
+            <div>Coupons</div>
+          </ion-col>
+
+          <ion-col>
+            <ion-thumbnail>
+              <img src="../../assets/cart.png">
+            </ion-thumbnail>
+            <div>Orders</div>
+          </ion-col>
+          <ion-col>
+            <ion-thumbnail>
+              <img src="../../assets/heart.png">
+            </ion-thumbnail>
+            <div>Favourites</div>
+          </ion-col>
+          <ion-col>
+            <ion-thumbnail>
+              <img src="../../assets/feedback.png">
+            </ion-thumbnail>
+            <div>Feedback</div>
+          </ion-col>
+
+        </ion-row>
+        <!-- <ion-row>
+          <ion-col text-center>
+            <ion-thumbnail>
+              <img src="../../assets/coupon.png">
+            </ion-thumbnail>
+            <div>Coupons</div>
+          </ion-col>
+
+          <ion-col>
+            <ion-thumbnail>
+              <img src="../../assets/cart.png">
+            </ion-thumbnail>
+            <div>Orders</div>
+          </ion-col>
+          <ion-col>
+            <ion-thumbnail>
+              <img src="../../assets/heart.png">
+            </ion-thumbnail>
+            <div>Favourites</div>
+          </ion-col>
+          <ion-col>
+            <ion-thumbnail>
+              <img src="../../assets/feedback.png">
+            </ion-thumbnail>
+            <div>Feedback</div>
+          </ion-col>
+
+        </ion-row> -->
+
+      </ion-grid>
+
+      <div class="heading-1">
+        More Options
+      </div>
+
+      <ion-list lines="none">
+        <ion-item detail="true" (click)="openPayment()">
+          <ion-icon name="card" slot="start"></ion-icon>
+          <ion-label>
+            <h3>Payment Method</h3>
+          </ion-label>
+        </ion-item>
+        <ion-item detail="true" (click)="presentPopover(event)">
+          <ion-icon name="notifications" slot="start"></ion-icon>
+          <ion-label>
+            <h3>Notifications</h3>
+          </ion-label>
+        </ion-item>
+        <ion-item detail="true">
+          <ion-icon name="help-circle" slot="start"></ion-icon>
+          <ion-label>
+            <h3>Contact Support</h3>
+          </ion-label>
+        </ion-item>
+        <ion-item detail="true">
+          <ion-icon name="log-out" slot="start"></ion-icon>
+          <ion-label>
+            <h3>Logout</h3>
+          </ion-label>
+        </ion-item>
+
+      </ion-list>
+
+    </ion-col>
+  </ion-row>
+
+</ion-content>

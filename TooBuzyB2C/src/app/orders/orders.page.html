@@ -1,0 +1,168 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>My Orders</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- sections -->
+
+  <ion-row class="sections ion-padding ion-text-center ion-justify-content-center">
+    <ion-col (click)="changeSection(0)" size-xl="2" size-lg="2" [class.active-section]="sections[0]">Current <ion-badge mode="ios"
+        color="danger">1</ion-badge>
+    </ion-col>
+    <ion-col (click)="changeSection(1)" size-xl="2" size-lg="2"  [class.active-section]="sections[1]">Past <ion-badge mode="ios"
+        color="medium">
+        24</ion-badge>
+    </ion-col>
+    <ion-col (click)="changeSection(2)" size-xl="2" size-lg="2" [class.active-section]="sections[2]">Draft <ion-badge mode="ios"
+        color="medium">
+        3</ion-badge>
+    </ion-col>
+  </ion-row>
+
+  <ion-list lines="none">
+
+    <!-- ORDER ITEM WITH COMPLETE STATUS -->
+
+    <ion-row class="ion-justify-content-center">
+      <ion-col size-xl="6" size-lg="8" >
+
+        <div class="order">
+
+          <ion-item lines="none">
+            <ion-thumbnail slot="start"><img src="https://dummyimage.com/600x400/000/fff"></ion-thumbnail>
+            <ion-label>
+              <h3>Restaurant Title</h3>
+              <p>Menu item description here</p>
+            </ion-label>
+            <ion-badge slot="end" color="success">complete</ion-badge>
+          </ion-item>
+          <div class="scrolling-wrapper">
+
+            <ion-card class="card ion-no-margin">
+              <img src="https://dummyimage.com/90x60/000/fff">
+              <ion-card-content class="ion-no-padding">
+                <div class="card-title">item name</div>
+              </ion-card-content>
+            </ion-card>
+            <ion-card class="card ion-no-margin">
+              <img src="https://dummyimage.com/90x60/000/fff">
+              <ion-card-content class="ion-no-padding">
+                <div class="card-title">item name</div>
+              </ion-card-content>
+            </ion-card>
+            <ion-card class="card ion-no-margin">
+              <img src="https://dummyimage.com/90x60/000/fff">
+              <ion-card-content class="ion-no-padding">
+                <div class="card-title">item name</div>
+              </ion-card-content>
+            </ion-card>
+
+          </div>
+          <ion-grid>
+            <ion-row>
+              <ion-col class="ion-text-right">
+                <span class="price-label">net total</span>
+                <span class="price"><small>$</small>40<small>.00</small></span>
+              </ion-col>
+            </ion-row>
+            <ion-row class="ion-margin-right">
+              <ion-col class="ion-text-right">
+                <ion-button fill="outline" size="small" color="dark">Order Again</ion-button>
+                <ion-button fill="outline" size="small" color="dark">Refund</ion-button>
+                <ion-button size="small">Review</ion-button>
+              </ion-col>
+            </ion-row>
+
+          </ion-grid>
+        </div>
+      </ion-col>
+    </ion-row>
+
+
+    <!-- END OF ORDER ITEM -->
+
+    <!-- START OF ORDER ITEM WITH PENDING STATUS  -->
+
+    <ion-row class="ion-justify-content-center">
+      <ion-col size-xl="6" size-lg="8">
+
+        <div class="order">
+
+          <ion-item lines="none">
+            <ion-thumbnail slot="start"><img src="https://dummyimage.com/600x400/000/fff"></ion-thumbnail>
+            <ion-label>
+              <h3>Restaurant Title</h3>
+              <p>Menu item description here</p>
+            </ion-label>
+            <ion-badge slot="end" color="medium">pending</ion-badge>
+          </ion-item>
+          <div class="scrolling-wrapper">
+
+            <ion-card class="card ion-no-margin">
+              <img src="https://dummyimage.com/90x60/000/fff">
+              <ion-card-content class="ion-no-padding">
+                <div class="card-title">item name</div>
+              </ion-card-content>
+            </ion-card>
+            <ion-card class="card ion-no-margin">
+              <img src="https://dummyimage.com/90x60/000/fff">
+              <ion-card-content class="ion-no-padding">
+                <div class="card-title">item name</div>
+              </ion-card-content>
+            </ion-card>
+            <ion-card class="card ion-no-margin">
+              <img src="https://dummyimage.com/90x60/000/fff">
+              <ion-card-content class="ion-no-padding">
+                <div class="card-title">item name</div>
+              </ion-card-content>
+            </ion-card>
+            <ion-card class="card ion-no-margin">
+              <img src="https://dummyimage.com/90x60/000/fff">
+              <ion-card-content class="ion-no-padding">
+                <div class="card-title">item name</div>
+              </ion-card-content>
+            </ion-card>
+            <ion-card class="card ion-no-margin">
+              <img src="https://dummyimage.com/90x60/000/fff">
+              <ion-card-content class="ion-no-padding">
+                <div class="card-title">item name</div>
+              </ion-card-content>
+            </ion-card>
+            <ion-card class="card ion-no-margin">
+              <img src="https://dummyimage.com/90x60/000/fff">
+              <ion-card-content class="ion-no-padding">
+                <div class="card-title">item name</div>
+              </ion-card-content>
+            </ion-card>
+
+          </div>
+          <ion-grid>
+            <ion-row>
+              <ion-col class="ion-text-right">
+                <span class="price-label">net total</span>
+                <span class="price"><small>$</small>40<small>.00</small></span>
+              </ion-col>
+            </ion-row>
+            <ion-row class="ion-margin-right">
+              <ion-col class="ion-text-right">
+                <ion-button fill="outline" size="small" color="dark">Order Again</ion-button>
+                <ion-button fill="outline" size="small" color="dark">Refund</ion-button>
+                <ion-button size="small">Review</ion-button>
+              </ion-col>
+            </ion-row>
+
+          </ion-grid>
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <!-- END OF ORDER ITEM -->
+  </ion-list>
+
+  <!-- END OF LIST OF ORDERS -->
+</ion-content>

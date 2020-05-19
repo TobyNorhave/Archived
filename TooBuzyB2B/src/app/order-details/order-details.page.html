@@ -1,0 +1,79 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Ordre detaljer</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card>
+        <ion-card-header>
+            <ion-card-subtitle>Jens Jensen</ion-card-subtitle>
+            <ion-card-title>Maj 20, 14:30, Bord til 2.</ion-card-title>
+        </ion-card-header>
+    
+        <ion-card-content>
+            <ion-list *ngFor="let item of [1, 1, 1]">
+                <ion-item>
+                    <ion-item-divider>
+                        <ion-img
+                            src="../assets/icons/toobuzylogo-72x72.png"
+                            slot="start"
+                        ></ion-img>
+                        <ion-item-group slot="start">
+                            <ion-title>CheeseBurger</ion-title>
+                            <ion-label color="light"
+                                >Ekstra: Lille Prommes</ion-label
+                            >
+                        </ion-item-group>
+                        <ion-item-group slot="end">
+                            <ion-title>45,-</ion-title>
+                        </ion-item-group>
+                    </ion-item-divider>
+                </ion-item>
+            </ion-list>
+    
+            <!-- Subtotal og tip procent -->
+            <ion-item>
+                <ion-item-divider>
+                    <ion-item-group slot="start">
+                        <ion-title class="grey-title">Subtotal</ion-title>
+                        <ion-title class="grey-title">Moms (25%)</ion-title>
+                    </ion-item-group>
+                    <ion-item-group slot="end">
+                        <ion-title class="grey-title">135,-</ion-title>
+                        <ion-title class="grey-title">33,75,-</ion-title>
+                    </ion-item-group>
+                </ion-item-divider>
+            </ion-item>
+    
+            <!-- Total prisen -->
+            <ion-item>
+                <ion-item-divider>
+                    <ion-item-group slot="start">
+                        <ion-title>Subtotal</ion-title>
+                    </ion-item-group>
+                    <ion-item-group slot="end">
+                        <ion-title>148,5,-</ion-title>
+                    </ion-item-group>
+                </ion-item-divider>
+            </ion-item>
+        </ion-card-content>
+    </ion-card>
+    
+    
+    <!-- Floating button -->
+    <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+        <ion-fab-button color="warning">
+            <ion-icon name="alert"></ion-icon>
+        </ion-fab-button>
+        <ion-fab-list side="start">
+            <ion-fab-button color="success">
+                <ion-icon name="checkmark"></ion-icon>
+            </ion-fab-button>
+            <ion-fab-button color="danger">
+                <ion-icon name="close"></ion-icon>
+            </ion-fab-button>
+        </ion-fab-list>
+    </ion-fab>
+    
+</ion-content>

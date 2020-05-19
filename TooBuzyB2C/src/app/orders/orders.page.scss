@@ -1,0 +1,92 @@
+.sections {
+  ion-col {
+    margin-right: 10px;
+    font-size: 0.8em;
+    text-transform: capitalize;
+    //border-bottom: 4px solid var(--ion-color-primary);
+    border-bottom: 4px solid rgb(207, 207, 207);
+  }
+}
+.active-section {
+  border-bottom: 4px solid var(--ion-color-primary) !important;
+}
+
+.price {
+  font-weight: bold;
+  color: red;
+  font-size: 0.9em !important;
+}
+
+.price-label {
+  font-size: 0.7em;
+  text-transform: uppercase;
+  margin-right: 40px;
+}
+
+ion-item ion-thumbnail {
+  height: 40px;
+  width: 40px;
+}
+
+ion-item ion-badge{
+    font-size: .7em;
+}
+
+h3 {
+  font-size: 0.8em;
+  font-weight: bold;
+  margin: 0px;
+  color: black;
+}
+p {
+  margin: 0px;
+  font-size: 0.7em !important;
+  color: black;
+}
+
+.scrolling-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  padding: 8px;
+  
+
+}
+
+.card {
+  display: inline-block;
+  width: 80px;
+  margin-left: 8px;
+  .card-title {
+    text-align: center;
+    font-size: .8em;
+    display: block;
+    color:#000;
+  }
+}
+
+
+ion-button{
+    text-transform: capitalize;
+    font-size: .7em;
+    --border-width:1px;
+}
+
+.order{
+    margin: 8px;
+    background: #fff;
+    padding: 8px;
+}
+
+ion-list{
+    background: rgb(250, 250, 250) !important;
+}
+
+ion-badge{
+  font-size: .8em;
+}

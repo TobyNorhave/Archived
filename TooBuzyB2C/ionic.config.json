@@ -1,0 +1,7 @@
+{
+  "name": "EatMe",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

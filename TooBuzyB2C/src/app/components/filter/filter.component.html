@@ -1,0 +1,49 @@
+<ion-list lines="none" class="ion-no-padding">
+  <div class="heading-1">
+    Price
+  </div>
+  <ion-row class="price ion-text-center">
+    <ion-col [class.active]="price[0]" (click)="changePrice(0)">
+      $
+    </ion-col>
+    <ion-col [class.active]="price[1]" (click)="changePrice(1)">
+      $$
+    </ion-col>
+
+    <ion-col [class.active]="price[2]" (click)="changePrice(2)">
+      $$$
+    </ion-col>
+
+  </ion-row>
+
+  <div class="heading-1">
+    Ratings
+  </div>
+
+  <ion-row class="price ion-text-center">
+    <ion-col [class.active]="rating[0]" (click)="changeRating(0)">
+      Ascending
+    </ion-col>
+    <ion-col [class.active]="rating[1]" (click)="changeRating(1)">
+      Descending
+    </ion-col>
+  </ion-row>
+
+  <div class="heading-1">
+    Distance
+  </div>
+
+  <ion-row class="price ion-text-center">
+    <ion-col [class.active]="distance[0]" (click)="changeDistance(0)">
+      Nearest
+    </ion-col>
+    <ion-col [class.active]="distance[1]" (click)="changeDistance(1)">
+      All
+    </ion-col>
+  </ion-row>
+
+
+
+
+  <ion-button expand="full">filter</ion-button>
+</ion-list>

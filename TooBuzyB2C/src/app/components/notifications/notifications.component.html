@@ -1,0 +1,28 @@
+<ion-list lines="none">
+  <div class="heading-1">
+    Order notifications
+  </div>
+
+  <ion-row class="price ion-text-center">
+    <ion-col [class.active]="rating[0]" (click)="changeRating(0)">
+      On
+    </ion-col>
+    <ion-col [class.active]="rating[1]" (click)="changeRating(1)">
+      Off
+    </ion-col>
+  </ion-row>
+
+  <div class="heading-1">
+    Restaurant offers and updates
+  </div>
+
+  <ion-row class="price ion-text-center">
+    <ion-col [class.active]="distance[0]" (click)="changeDistance(0)">
+      On
+    </ion-col>
+    <ion-col [class.active]="distance[1]" (click)="changeDistance(1)">
+      Off
+    </ion-col>
+  </ion-row>
+
+</ion-list>

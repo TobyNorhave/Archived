@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Register</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-list>
+  <ion-item>
+    <ion-label position="floating">Fulde Navn</ion-label>
+    <ion-input type="text" required="true" [(ngModel)]="name"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Post nummer</ion-label>
+    <ion-input type="text" required="true" [(ngModel)]="zip"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Tlf nummer</ion-label>
+    <ion-input type="tel" required="true" [(ngModel)]="phoneNo"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">E-mail</ion-label>
+    <ion-input type="email" required="true" [(ngModel)]="email"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Kodeord</ion-label>
+    <ion-input type="password" required="true" [(ngModel)]="password"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Gentag kodeord</ion-label>
+    <ion-input type="password" required="true" [(ngModel)]="cpassword"></ion-input>
+  </ion-item>
+  
+</ion-list>
+<ion-button fill="solid" expand="block" color="primary" (click)="register()">Register</ion-button>
+<ion-list>
+<ion-title position="floating">Allerede medlem?</ion-title>
+</ion-list>
+<ion-button fill="solid" expand="block" color="primary" [routerLink]="['/login']">Log ind</ion-button>
+</ion-content>

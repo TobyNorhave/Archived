@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon slot="icon-only" name="options"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-searchbar
+      placeholder="Søg efter Postnummer, køkken eller ret!"
+      showCancelButton="focus"
+    ></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <app-slider></app-slider>
+
+    <ion-title class="lBold">Vælg cuisine:</ion-title>
+
+    <app-cuisine></app-cuisine>
+
+  <app-restaurants [restaurant]="restaurant"></app-restaurants>
+</ion-content>

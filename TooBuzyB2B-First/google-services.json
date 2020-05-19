@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "445602748881",
+    "firebase_url": "https://toobuzy-b2b.firebaseio.com",
+    "project_id": "toobuzy-b2b",
+    "storage_bucket": "toobuzy-b2b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:445602748881:android:1e59c5a97ea757e3aa28f0",
+        "android_client_info": {
+          "package_name": "dk.toobuzyb2b.plexcore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "445602748881-vu0t63dkc32i471otfqqhcheeiaddu7h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArRpSSQc1u04RLljaCjoHxZgzrBm_7rtc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "445602748881-vu0t63dkc32i471otfqqhcheeiaddu7h.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "445602748881-39suoied8kvd37qcrras355bg2b3gbgd.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "dk.toobuzyb2b.plexcore"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
